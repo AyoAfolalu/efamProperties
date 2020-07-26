@@ -1,0 +1,317 @@
+html{
+  scroll-behavior: smooth;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+.text{
+    line-height: 1.75;
+}
+
+
+.a {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .a video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  .a .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .a .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  
+  @media (pointer: coarse) and (hover: none) {
+    .a {
+      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+    .a video {
+      display: none;
+    }
+  }
+
+
+
+
+  .investor-card{
+    background-color: #EBF0F3;
+  }
+
+  .product-card{
+    background-color: #F2F2F2;
+    
+  }
+
+
+  .learnMore {
+    border: 2px solid #000;
+    background: none;
+    color: #000000;
+    width: 20%;
+    height: 50px;
+    border-radius: 0px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+  .learnMore:hover {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+  }
+
+  .aboutLearnMore{
+    border: 2px solid #000;
+    background: none;
+    color: #000000;
+    width: 15%;
+    height: 50px;
+    border-radius: 0px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+
+  .aboutLearnMore:hover {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+  }
+
+.carousel-caption{
+  top: 35%;
+}
+
+.logoPic{
+  width: 30%;
+}
+
+.navbar{
+  background-color: #fff;
+}
+
+.up-arrow {
+  transform: translate(0, 0);
+  transition: .5s ease;
+  }
+  
+  .up-arrow:hover {
+  transform: translate(0, -10px);
+  transition: .5s ease;
+  }
+
+  .aboutus{
+    padding-top: 7%;
+    padding-bottom: 4%;
+  }
+
+  .aboutUsText{
+    line-height: 2;
+  }
+
+  .bio{
+    padding-top: 2%;
+  }
+
+  .contact{
+    padding-top:5%;
+    padding-bottom: 2%;
+  }
+
+
+
+  .contactButton
+{
+  border: 2px solid #000;
+  background: none;
+  color: #000000;
+  width: 20%;
+  height: 50px;
+  border-radius: 0px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+
+.contactButton:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  cursor: pointer;
+  background: #000;
+  color: #fff;
+}
+
+.subscribeButton
+{
+  border: 2px solid #000;
+  background: none;
+  color: #000000;
+  width: 20%;
+  height: 50px;
+  border-radius: 0px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+
+.subscribeButton:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  cursor: pointer;
+  background: #000;
+  color: #fff;
+}
+
+.investor {
+        width: 100%;
+}
+/*  Extra small devices (portrait phones, less than 576px) 
+// No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and down) */
+ @media (max-width: 576px) { 
+   
+  .aboutLearnMore{
+    width: 40%;
+  }
+
+  .bioPic{
+    width:100%;
+  }
+
+  .about{
+    padding-top: 25%;
+  }
+
+  .investorPhotoComingSoon
+  {
+    width:100%;
+  }
+
+  .subscribe{
+    padding-top:35%;
+    padding-bottom: 16%;
+  }
+  } 
+
+/* // Medium devices (tablets, 768px and up) */
+/* @media (min-width: 768px) { ... } */
+/* 
+// Large devices (desktops, 992px and down) */
+ @media (max-width: 992px) {  
+   .about{
+  padding-top: 22%;
+} 
+
+.contact {
+  padding-top: 23%;
+}
+
+.contactButton{
+  width: 35%;
+}
+.subscribe{
+  padding-top:30%;
+  padding-bottom: 35%;
+}
+
+.subscribeButton{
+  width: 30%;
+}
+	 
+	 html{
+		 font-size: 2em;
+	 }
+	 
+	 .learnMore {
+    width: 60%;
+    height: 80px;
+  }
+	 
+	 .aboutLearnMore{
+		 width: 40%;
+    height: 80px;
+	 }
+
+} 
+
+@media (min-width: 992px) {  
+
+.contact {
+ padding-top: 15%;
+}
+
+.subscribe{
+  padding-top:15%;
+  padding-bottom: 15%;
+}
+
+} 
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .contact{
+    padding-top:7%;
+    padding-bottom: 2%;
+  }
+  .subscribe{
+    padding-top:15%;
+    padding-bottom: 15%;
+  }
+
+ }
+
+ .investorPhotoText{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ }
+
+ .investorPhotoComingSoon {
+  width: 100%;
+  opacity: 0.4;
+  color:#000;
+}
